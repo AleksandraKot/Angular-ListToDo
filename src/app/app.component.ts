@@ -11,9 +11,17 @@ export class AppComponent {
     todo: {
       name: 'To do',
       tasks: [
-        'Todo #1',
-        'Todo #2',
-        'Todo #3'
+        {name: 'Todo #1', done: false},
+        {name: 'Todo #2', done: false},
+        {name: 'Todo #3', done: false},
+        {name: 'Todo #4', done: false},
+      ]
+    },
+    done: {
+      name: 'Done',
+      tasks: [
+        {name: 'Todo #5', done: true},
+        {name: 'Todo #6', done: true}
       ]
     }
   }
