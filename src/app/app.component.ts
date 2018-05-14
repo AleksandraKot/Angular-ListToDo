@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import {Todo} from './shared/todo.model';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,17 +13,17 @@ export class AppComponent {
     todo: {
       name: 'To do',
       tasks: [
-        {name: 'Todo #1', done: false},
-        {name: 'Todo #2', done: false},
-        {name: 'Todo #3', done: false},
-        {name: 'Todo #4', done: false},
+        new Todo('Todo #11'),
+        new Todo('Todo #12'),
+        new Todo('Todo #13'),
+        new Todo('Todo #14')
       ]
     },
     done: {
       name: 'Done',
       tasks: [
-        {name: 'Todo #5', done: true},
-        {name: 'Todo #6', done: true}
+        new Todo('Todo #15', true),
+        new Todo('Todo #16', true)
       ]
     }
   }
